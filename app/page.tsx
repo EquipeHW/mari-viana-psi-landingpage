@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#EBEBEB]">
       <header className="sticky top-0 z-50 w-full border-b border-[#EBEBEB] bg-white/80 backdrop-blur-sm">
-        <div className="container flex h-28 items-center justify-between">
+        <div className="container flex h-24 items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="relative h-48 w-48">
+            <div className="relative h-20 w-64">
               <Image
                 src="logoazulmari.png"
                 alt="Mariana Viana Psicologia"
