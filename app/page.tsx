@@ -75,9 +75,9 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-6 relative">
-              <div className="relative h-[500px] rounded-2xl overflow-hidden">
+              <div className="relative h-[600px] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
+                  src="mari2.jpg"
                   alt="Psicóloga Mariana Viana"
                   fill
                   className="object-cover"
@@ -352,7 +352,7 @@ export default function Home() {
               <div className="md:col-span-5 relative">
                 <div className="relative h-[600px] rounded-2xl overflow-hidden">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
+                    src="mari3.jpg"
                     alt="Psicóloga Mariana Viana"
                     fill
                     className="object-cover"
