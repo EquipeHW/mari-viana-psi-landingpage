@@ -1,4 +1,5 @@
 import type React from "react"
+import type { Metadata } from "next"
 import "./globals.css"
 import { Open_Sans, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -14,22 +15,26 @@ const playfair = Playfair_Display({
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
-  display: "swap",
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Mariana Viana | Psicóloga",
-  description: "Psicóloga especializada em transformação emocional, autoconhecimento e atendimento humanizado.",
-    generator: 'v0.dev'
+  description: "Psicóloga CRP 05/47572 - Atendimento 100% online com sigilo e flexibilidade",
+  icons: {
+    icon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${playfair.variable} ${openSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
