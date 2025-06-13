@@ -1,11 +1,19 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Open_Sans, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({
+// Usando Playfair Display como substituto para Versailles A até que a fonte personalizada seja fornecida
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-playfair",
+  display: "swap",
+})
+
+// Open Sans está na lista de fontes da identidade visual
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
   display: "swap",
 })
 
@@ -22,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${playfair.variable} ${openSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

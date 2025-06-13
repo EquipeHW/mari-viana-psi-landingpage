@@ -81,6 +81,7 @@ const config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
+        versailles: ['"Versailles A"', 'serif'],
       },
     },
   },
