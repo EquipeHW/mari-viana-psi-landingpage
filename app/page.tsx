@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { MessageCircle, Star, Heart, Brain, Users, Sparkles, Clock, ArrowRight } from "lucide-react"
+import { MessageCircle, Star, Heart, Brain, Users, Sparkles, Clock, ArrowRight, Target, Zap, TrendingUp, Shield     } from "lucide-react"
 
 export default function Home() {
   return (
@@ -52,32 +52,55 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="py-20 md:py-28 container">
+        {/* Hero Section - Dobra 1 */}
+        <section className="py-14 md:py-14 container">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-6 space-y-8">
+            <div className="md:col-span-7 space-y-8">
               <div className="inline-block px-4 py-1 rounded-full bg-[#CBAA7B]/20 text-[#CBAA7B] text-sm font-sans mb-2">
                 Psicóloga CRP 05/47572
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-versailles leading-tight text-[#2B484C]">
-                Quer ter controle das suas <span className="font-medium">emoções</span> e mudar a história da sua{" "}
-                <span className="font-medium">vida</span>?
+              <h1 className="text-3xl md:text-4xl lg:text-4xl font-serif leading-tight text-[#2B484C]">
+                <span className="font-medium">Alta performance</span> com saúde emocional é possível.
               </h1>
-              <p className="text-lg text-[#2B484C]/80 font-sans">
-                Te ajudo a mudar suas atitudes, superar traumas e ter uma jornada mais leve.
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-[#2B484C] font-sans leading-relaxed">
+                  Você sustenta resultados, metas, família — mas está cada vez mais exausto(a)? <br />
+                  Relacionamentos em crise, ansiedade e culpa viraram parte da sua rotina?
+                </p>
+               
+              </div>
+              <div className="bg-[#CBAA7B]/10 p-6 rounded-2xl space-y-4">
+                <p className="text-lg text-[#2B484C] font-sans font-medium">
+                  Essa não precisa ser sua nova normalidade.
+                </p>
+                <p className="text-[#2B484C]/80 font-sans">
+                  A psicoterapia é um investimento em equilíbrio, clareza e potência emocional.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h2 className="text-4xl font-serif text-[#2B484C] font-medium">
+                  Psicóloga Mariana Lima Viana Pena
+                </h2>
+                <p className="text-[#2B484C]/80 font-sans leading-relaxed">
+                  Mais de 15 anos de experiência acolhendo pessoas que buscam mais do que alívio:{" "}
+                  <strong>transformação</strong>.
+                </p>
+                <p className="text-[#2B484C]/80 font-sans leading-relaxed">
+                  Especialista em desenvolvimento humano, ex-executiva de RH no mercado corporativo, vivi na pele o
+                  burnout e a sobrecarga. Hoje, acolho homens e mulheres que precisam de um espaço de estratégia
+                  emocional para continuar crescendo – sem se perder de si.
+                </p>
+              </div>
               <div className="pt-4">
-                <Button asChild className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8 py-6 text-base">
-                  <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
-                    Agende sua consulta <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8 py-6 text-base">
+                  Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
-            <div className="md:col-span-6 relative">
+            <div className="md:col-span-5 relative">
               <div className="relative h-[600px] rounded-2xl overflow-hidden">
                 <Image
-                  src="mari2.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
                   alt="Psicóloga Mariana Viana"
                   fill
                   className="object-cover"
@@ -99,64 +122,70 @@ export default function Home() {
           <div className="absolute left-0 w-1/3 h-40 bg-[#CBAA7B]/20 rounded-r-full -z-10"></div>
         </div>
 
-        {/* Tratamentos */}
+        {/* Tratamentos - Dobra 2 */}
         <section id="tratamentos" className="py-20 bg-white">
           <div className="container space-y-16">
-            <div className="text-center space-y-4 max-w-2xl mx-auto">
-              <h2 className="text-3xl font-versailles text-[#2B484C]">
-                Um espaço seguro para <span className="font-medium">transformação real</span>
+            <div className="text-center space-y-4 max-w-3xl mx-auto">
+              <h2 className="text-3xl font-serif text-[#2B484C]">
+                Tratamentos <span className="font-medium">Especializados</span>
               </h2>
-              <p className="text-[#2B484C]/80 font-sans">
-                A psicoterapia é uma jornada de autoconhecimento. Comigo, você explora emoções, cura feridas e
-                desenvolve relações mais saudáveis.
+              <p className="text-[#2B484C]/80 font-sans text-lg">
+                Com uma abordagem integrativa, baseada em Psicologia Positiva, espiritualidade e neurociência, a
+                psicoterapia com Mariana Viana promove transformação emocional real.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-4 hover:shadow-md transition-all group">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 hover:shadow-md transition-all group">
+                <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
+                  <Target className="h-6 w-6 text-[#2B484C]" />
+                </div>
+                <h3 className="text-xl font-serif text-[#2B484C]">Equilíbrio Emocional para Alta Performance</h3>
+                <p className="text-[#2B484C]/70 font-sans">
+                  Clareza mental, autoconsciência e estrutura emocional para quem sustenta muitas responsabilidades.
+                </p>
+              </div>
+
+              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 hover:shadow-md transition-all group">
                 <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
                   <Users className="h-6 w-6 text-[#2B484C]" />
                 </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Relacionamentos Conscientes</h3>
+                <h3 className="text-xl font-serif text-[#2B484C]">
+                  Relacionamentos Saudáveis e Inteligência Emocional
+                </h3>
                 <p className="text-[#2B484C]/70 font-sans">
-                  Desenvolva relações mais saudáveis e significativas em sua vida.
+                  Estratégias para superar padrões destrutivos, comunicar com assertividade e restaurar vínculos.
                 </p>
               </div>
-              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-4 hover:shadow-md transition-all group">
-                <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
-                  <Heart className="h-6 w-6 text-[#2B484C]" />
-                </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Fortalecimento Emocional</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Aprenda a lidar com suas emoções de forma equilibrada e saudável.
-                </p>
-              </div>
-              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-4 hover:shadow-md transition-all group">
-                <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
-                  <Users className="h-6 w-6 text-[#2B484C]" />
-                </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Reconstrução Familiar</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Restaure laços e construa uma dinâmica familiar mais saudável.
-                </p>
-              </div>
-              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-4 hover:shadow-md transition-all group">
+
+              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 hover:shadow-md transition-all group">
                 <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
                   <Brain className="h-6 w-6 text-[#2B484C]" />
                 </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Autoconhecimento Profundo</h3>
-                <p className="text-[#2B484C]/70 font-sans">Descubra seu verdadeiro potencial e propósito de vida.</p>
+                <h3 className="text-xl font-serif text-[#2B484C]">Autoconhecimento Estratégico</h3>
+                <p className="text-[#2B484C]/70 font-sans">
+                  Desenvolva autoliderança, presença e propósito — dentro e fora do trabalho.
+                </p>
+              </div>
+
+              <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 hover:shadow-md transition-all group">
+                <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
+                  <Sparkles className="h-6 w-6 text-[#2B484C]" />
+                </div>
+                <h3 className="text-xl font-serif text-[#2B484C]">Reconexão Pessoal e Espiritualidade</h3>
+                <p className="text-[#2B484C]/70 font-sans">
+                  Um caminho de cura com profundidade, sensibilidade e direção.
+                </p>
               </div>
             </div>
 
             <div className="text-center bg-[#CBAA7B]/10 p-8 rounded-2xl max-w-3xl mx-auto">
+              <h3 className="text-xl font-serif text-[#2B484C] mb-4">Atendimento 100% Online</h3>
               <p className="text-lg font-sans text-[#2B484C] mb-6">
-                Atendimento <span className="font-medium">100% Online</span> – Particular e humanizado.
+                Particular, humanizado e flexível. Exclusividade para quem está pronto(a) para investir em si.
               </p>
-              <Button asChild className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
-                <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
-                  Agende sua consulta <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+              <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
+                Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
@@ -167,91 +196,99 @@ export default function Home() {
           <div className="absolute right-0 w-1/4 h-60 bg-[#CBAA7B]/10 rounded-l-full -z-10"></div>
         </div>
 
-        {/* Diferenciais */}
-        <section id="diferenciais" className="py-20 bg-[#EBEBEB]">
-          <div className="container space-y-16">
-            <div className="text-center space-y-4 max-w-2xl mx-auto">
-              <h2 className="text-3xl font-versailles text-[#2B484C]">
-                O Que Me <span className="font-medium">Diferencia</span>
-              </h2>
-              <p className="text-[#2B484C]/80 font-sans">
-                Uma abordagem única que combina técnicas científicas com um olhar humanizado para o seu bem-estar.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-2xl space-y-6 hover:shadow-md transition-all border border-[#EBEBEB]">
-                <div className="h-16 w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
-                  <Sparkles className="h-8 w-8 text-[#CBAA7B]" />
+        {/* Diferenciais - Dobra 3 */}
+            <section id="diferenciais" className="py-10 md:py-14 bg-[#EBEBEB]">
+              <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12 md:space-y-16">
+                <div className="text-center space-y-4 max-w-2xl mx-auto">
+                  <h2 className="text-2xl sm:text-3xl font-serif text-[#2B484C]">
+                    Meus <span className="font-medium">Diferenciais</span>
+                  </h2>
                 </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Atendimento Personalizado</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Sem fórmulas prontas, cada pessoa recebe um tratamento único baseado em suas necessidades específicas.
-                </p>
-              </div>
 
-              <div className="bg-white p-8 rounded-2xl space-y-6 hover:shadow-md transition-all border border-[#EBEBEB]">
-                <div className="h-16 w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
-                  <Brain className="h-8 w-8 text-[#CBAA7B]" />
+                {/* Container flexível com centralização */}
+                <div className="flex flex-wrap justify-center -mx-4 gap-y-8">
+                  {/* Card 1 */}
+                  <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl space-y-4 md:space-y-6 hover:shadow-md transition-all border border-[#EBEBEB] h-full">
+                      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
+                        <Zap className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Abordagem Estratégica e Humanizada</h3>
+                      <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
+                        Psicoterapia com base científica e escuta sensível — ideal para quem vive sob pressão.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Card 2 */}
+                  <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl space-y-4 md:space-y-6 hover:shadow-md transition-all border border-[#EBEBEB] h-full">
+                      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
+                        <TrendingUp className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Vivência no Mundo Corporativo</h3>
+                      <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
+                        Ex-RH em grandes empresas, entendo de dentro a dor da alta performance sem equilíbrio.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Card 3 */}
+                  <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl space-y-4 md:space-y-6 hover:shadow-md transition-all border border-[#EBEBEB] h-full">
+                      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
+                        <Sparkles className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Espiritualidade com Respeito e Propósito</h3>
+                      <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
+                        Integro fé como apoio emocional, quando isso faz sentido para o paciente.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Card 4 */}
+                  <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl space-y-4 md:space-y-6 hover:shadow-md transition-all border border-[#EBEBEB] h-full">
+                      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
+                        <Target className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Alta Personalização</h3>
+                      <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
+                        Atendimento individualizado, com foco real em resultado emocional profundo e sustentável.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Card 5 */}
+                  <div className="w-full sm:w-1/2 lg:w-1/3 px-4">
+                    <div className="bg-white p-6 md:p-8 rounded-2xl space-y-4 md:space-y-6 hover:shadow-md transition-all border border-[#EBEBEB] h-full">
+                      <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
+                        <Shield className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
+                      </div>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Exclusividade no Atendimento</h3>
+                      <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
+                        Atendimento 100% online e particular, com acompanhamento próximo, seguro e ético.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Base Científica + Espiritualidade</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Combinação de Psicologia Positiva, Neurociência e uma abordagem integrativa para o seu
-                  desenvolvimento.
-                </p>
-              </div>
 
-              <div className="bg-white p-8 rounded-2xl space-y-6 hover:shadow-md transition-all border border-[#EBEBEB]">
-                <div className="h-16 w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
-                  <Heart className="h-8 w-8 text-[#CBAA7B]" />
+                <div className="text-center pt-4">
+                  <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-base">
+                    Conheça os diferenciais <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
                 </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Experiência de Vida</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Ex-executiva com vivência de burnout, compreendo profundamente os desafios profissionais e pessoais.
-                </p>
               </div>
+            </section>
 
-              <div className="bg-white p-8 rounded-2xl space-y-6 hover:shadow-md transition-all border border-[#EBEBEB]">
-                <div className="h-16 w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
-                  <MessageCircle className="h-8 w-8 text-[#CBAA7B]" />
-                </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Escuta Empática</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Ambiente livre de julgamentos, onde você pode se expressar livremente e ser verdadeiramente ouvido.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-2xl space-y-6 hover:shadow-md transition-all border border-[#EBEBEB]">
-                <div className="h-16 w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
-                  <Clock className="h-8 w-8 text-[#CBAA7B]" />
-                </div>
-                <h3 className="text-xl font-versailles text-[#2B484C]">Flexibilidade Online</h3>
-                <p className="text-[#2B484C]/70 font-sans">
-                  Sigilo e acesso de qualquer lugar, adaptado à sua rotina e necessidades específicas.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Button asChild className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
-                <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
-                  Quero minha transformação <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Depoimentos */}
+        {/* Depoimentos - Dobra 4 */}
         <section id="depoimentos" className="py-20 bg-white">
           <div className="container space-y-16">
             <div className="text-center space-y-4 max-w-2xl mx-auto">
-              <h2 className="text-3xl font-versailles text-[#2B484C]">
+              <h2 className="text-3xl font-serif text-[#2B484C]">
                 Histórias de <span className="font-medium">Transformação</span>
               </h2>
-              <p className="text-[#2B484C]/80 font-sans">
-                Conheça algumas experiências de pessoas que passaram pelo processo de transformação.
-              </p>
+              <p className="text-[#2B484C]/80 font-sans">Depoimentos extraídos do Google Meu Negócio.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -275,13 +312,8 @@ export default function Home() {
                   <Star className="fill-[#CBAA7B]" size={16} />
                 </div>
                 <p className="text-[#2B484C]/80 italic font-sans">
-                  "A Mariana me acolheu de verdade. Pela primeira vez, senti que alguém realmente me entendia e não me
-                  julgava. Hoje consigo lidar com minhas emoções de forma muito mais saudável."
+                  "Depois de anos tentando diferentes profissionais, me senti verdadeiramente compreendida."
                 </p>
-                <div className="pt-4 border-t border-[#CBAA7B]/30">
-                  <p className="font-medium text-[#2B484C]">Maria C.</p>
-                  <p className="text-sm text-[#2B484C]/70 font-sans">Cliente há 1 ano</p>
-                </div>
               </div>
 
               <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 relative">
@@ -304,13 +336,8 @@ export default function Home() {
                   <Star className="fill-[#CBAA7B]" size={16} />
                 </div>
                 <p className="text-[#2B484C]/80 italic font-sans">
-                  "Hoje vivo relacionamentos mais saudáveis graças ao trabalho com a Mariana. Aprendi a estabelecer
-                  limites e a me comunicar de forma mais clara e assertiva."
+                  "A Mariana tem uma escuta diferenciada, que conecta empatia com direcionamento real."
                 </p>
-                <div className="pt-4 border-t border-[#CBAA7B]/30">
-                  <p className="font-medium text-[#2B484C]">Pedro S.</p>
-                  <p className="text-sm text-[#2B484C]/70 font-sans">Cliente há 8 meses</p>
-                </div>
               </div>
 
               <div className="bg-[#EBEBEB] p-8 rounded-2xl space-y-6 relative">
@@ -333,26 +360,21 @@ export default function Home() {
                   <Star className="fill-[#CBAA7B]" size={16} />
                 </div>
                 <p className="text-[#2B484C]/80 italic font-sans">
-                  "Recuperei minha leveza depois de anos lutando contra a ansiedade. A abordagem da Mariana é única,
-                  combinando técnicas científicas com um olhar para o espiritual."
+                  "Pela primeira vez, consegui manter um processo terapêutico que me transformou."
                 </p>
-                <div className="pt-4 border-t border-[#CBAA7B]/30">
-                  <p className="font-medium text-[#2B484C]">Ana L.</p>
-                  <p className="text-sm text-[#2B484C]/70 font-sans">Cliente há 1 ano e 3 meses</p>
-                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Sobre */}
+        {/* Sobre - Dobra 5 */}
         <section id="sobre" className="py-20 bg-[#EBEBEB]">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
               <div className="md:col-span-5 relative">
                 <div className="relative h-[600px] rounded-2xl overflow-hidden">
                   <Image
-                    src="mari3.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
                     alt="Psicóloga Mariana Viana"
                     fill
                     className="object-cover"
@@ -365,27 +387,25 @@ export default function Home() {
                 <div className="inline-block px-4 py-1 rounded-full bg-[#DBB8AF]/20 text-[#DBB8AF] text-sm font-sans mb-2">
                   Sobre mim
                 </div>
-                <h2 className="text-3xl font-versailles text-[#2B484C]">
-                  Conheça a Psicóloga <span className="font-medium">Mariana Viana</span>
+                <h2 className="text-3xl font-serif text-[#2B484C]">
+                  Conheça a Psicóloga <span className="font-medium">Mariana Lima Viana Pena</span>
                 </h2>
                 <p className="text-[#2B484C]/80 font-sans text-lg leading-relaxed">
-                  Sou psicóloga integrativa com 15 anos de experiência. Minha trajetória no RH corporativo e minha
-                  vivência com burnout me ensinaram que a cura começa com coragem de olhar para dentro.
+                  Sou psicóloga com mais de 15 anos de experiência e especialista em desenvolvimento humano. Minha
+                  trajetória começou no mercado corporativo, onde fui executiva de RH — até que o burnout e a ansiedade
+                  me obrigaram a reavaliar tudo.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Minha abordagem combina técnicas científicas comprovadas com um olhar para o desenvolvimento integral
-                  do ser humano. Acredito que cada pessoa tem um potencial imenso para transformação e crescimento
-                  quando recebe o suporte adequado.
+                  Transformei essa crise em propósito. Hoje, ajudo pessoas que vivem sob pressão, lidam com múltiplas
+                  responsabilidades e desejam encontrar um novo jeito de estar na vida.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Trabalho com uma metodologia personalizada, respeitando a individualidade de cada cliente e criando um
-                  espaço seguro para que você possa explorar suas emoções e desenvolver novas perspectivas.
+                  Minha abordagem une ciência, espiritualidade e vivência prática. Acredito que cuidar da mente é uma
+                  das decisões mais estratégicas que alguém pode tomar.
                 </p>
                 <div className="pt-4">
-                  <Button asChild className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
-                    <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
-                      Agende sua consulta <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
+                  <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
+                    Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
@@ -393,16 +413,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* FAQ - Dobra 6 */}
         <section id="faq" className="py-20 bg-white">
           <div className="container space-y-16 max-w-3xl mx-auto">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-versailles text-[#2B484C]">
+              <h2 className="text-3xl font-serif text-[#2B484C]">
                 Perguntas <span className="font-medium">Frequentes</span>
               </h2>
-              <p className="text-[#2B484C]/80 font-sans">
-                Tire suas dúvidas sobre o processo terapêutico e como podemos trabalhar juntos.
-              </p>
             </div>
 
             <Accordion type="single" collapsible className="w-full">
@@ -411,9 +428,8 @@ export default function Home() {
                   Como funciona o atendimento online?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
-                  O atendimento é realizado por videoconferência, em uma plataforma segura e confidencial. Você precisa
-                  apenas de um dispositivo com conexão à internet, câmera e microfone. A sessão tem a mesma duração e
-                  qualidade de uma sessão presencial, com a vantagem da flexibilidade de horário e localização.
+                  Realizado por videoconferência em plataformas seguras. A escuta é profunda, acolhedora e estruturada
+                  para resultados.
                 </AccordionContent>
               </AccordionItem>
 
@@ -422,47 +438,40 @@ export default function Home() {
                   Quanto tempo dura o tratamento?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
-                  A duração do tratamento varia de acordo com cada caso e objetivo. Algumas pessoas percebem melhorias
-                  significativas em poucas semanas, enquanto outras se beneficiam de um acompanhamento mais longo.
-                  Avaliamos juntos o progresso periodicamente e definimos o melhor caminho para sua jornada de
-                  transformação.
+                  Cada jornada é única. Respeito o seu tempo e seus objetivos, sem fórmulas prontas.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border-b border-[#CBAA7B]/30">
                 <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
-                  Aceita convênios?
+                  Você atende por convênios ou planos de saúde?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
-                  Atualmente trabalho apenas com atendimentos particulares, o que garante maior flexibilidade de
-                  horários e continuidade do tratamento. Forneço recibo para reembolso junto ao seu convênio, caso ele
-                  ofereça esse benefício para atendimentos psicológicos.
+                  No momento, os atendimentos são particulares, oferecendo exclusividade, sigilo e flexibilidade. Você
+                  pode solicitar reembolso ao seu plano com o recibo que forneço.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border-b border-[#CBAA7B]/30">
                 <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
-                  Como agendar?
+                  Como agendar minha consulta?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
-                  Você pode agendar sua consulta através do WhatsApp (11) 98055-3835, pelo botão "Agende sua consulta"
-                  neste site, ou enviando um e-mail. Respondo em até 24 horas úteis e buscamos juntos o melhor horário
-                  para seu atendimento inicial.
+                  Basta clicar no botão abaixo para iniciar uma conversa no WhatsApp.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
 
             <div className="text-center pt-8">
-              <Button asChild className="bg-[#2B484C] hover:bg-[#243c3f] text-white rounded-full px-8 flex items-center gap-2 mx-auto">
-                <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle size={18} />
-                  Fale comigo no WhatsApp
-                </a>
+              <Button className="bg-[#2B484C] hover:bg-[#243c3f] text-white rounded-full px-8 flex items-center gap-2 mx-auto">
+                <MessageCircle size={18} />
+                Agende sua consulta pelo WhatsApp
               </Button>
             </div>
           </div>
         </section>
       </main>
+
 
       <footer className="bg-[#2B484C] text-white py-16">
         <div className="container">
@@ -495,24 +504,7 @@ export default function Home() {
                 <MessageCircle size={18} className="text-[#DBB8AF]" />
                 <span>WhatsApp: (11) 98055-3835</span>
               </p>
-              <p className="flex items-center gap-3 text-white/90 font-sans">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-[#DBB8AF]"
-                >
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-               
-              </p>
+             
             </div>
 
             <div className="space-y-6">
