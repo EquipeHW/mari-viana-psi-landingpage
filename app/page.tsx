@@ -60,7 +60,7 @@ export default function Home() {
                 Psicóloga CRP 05/47572
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-4xl font-serif leading-tight text-[#2B484C]">
-                <span className="font-medium">Alta performance</span> com saúde emocional é possível.
+                <span className="font-medium">Equilíbrio</span> entre vida profissional e saúde emocional.
               </h1>
               <div className="space-y-4">
                 <p className="text-lg text-[#2B484C] font-sans leading-relaxed">
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className="bg-[#CBAA7B]/10 p-6 rounded-2xl space-y-4">
                 <p className="text-lg text-[#2B484C] font-sans font-medium">
-                  Essa não precisa ser sua nova normalidade.
+                  Existe um caminho para o bem-estar emocional.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans">
                   A psicoterapia é um investimento em equilíbrio, clareza e potência emocional.
@@ -79,14 +79,14 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <h2 className="text-4xl font-serif text-[#2B484C] font-medium">
-                  Psicóloga Mariana Lima Viana Pena
+                  Psicóloga Mariana Viana
                 </h2>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
                   Mais de 15 anos de experiência acolhendo pessoas que buscam mais do que alívio:{" "}
                   <strong>transformação</strong>.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Especialista em desenvolvimento humano, ex-executiva de RH no mercado corporativo, vivi na pele o
+                  Especialista em desenvolvimento humano, ex-executiva de RH no mercado corporativo, conheci de perto o
                   burnout e a sobrecarga. Hoje, acolho homens e mulheres que precisam de um espaço de estratégia
                   emocional para continuar crescendo – sem se perder de si.
                 </p>
@@ -130,7 +130,7 @@ export default function Home() {
                 Tratamentos <span className="font-medium">Especializados</span>
               </h2>
               <p className="text-[#2B484C]/80 font-sans text-lg">
-                Com uma abordagem integrativa, baseada em Psicologia Positiva, espiritualidade e neurociência, a
+                Com uma abordagem integrativa, baseada em Psicologia Positiva e neurociência, a
                 psicoterapia com Mariana Viana promove transformação emocional real.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="h-12 w-12 rounded-full bg-[#DBB8AF]/30 flex items-center justify-center group-hover:bg-[#DBB8AF]/50 transition-colors">
                   <Sparkles className="h-6 w-6 text-[#2B484C]" />
                 </div>
-                <h3 className="text-xl font-serif text-[#2B484C]">Reconexão Pessoal e Espiritualidade</h3>
+                <h3 className="text-xl font-serif text-[#2B484C]">Reconexão Pessoal</h3>
                 <p className="text-[#2B484C]/70 font-sans">
                   Um caminho de cura com profundidade, sensibilidade e direção.
                 </p>
@@ -228,7 +228,7 @@ export default function Home() {
                       </div>
                       <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Vivência no Mundo Corporativo</h3>
                       <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
-                        Ex-RH em grandes empresas, entendo de dentro a dor da alta performance sem equilíbrio.
+                        Executiva de RH em grandes empresas, entendo de dentro a dor da alta performance sem equilíbrio.
                       </p>
                     </div>
                   </div>
@@ -239,9 +239,9 @@ export default function Home() {
                       <div className="h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#CBAA7B]/20 flex items-center justify-center">
                         <Sparkles className="h-6 w-6 md:h-8 md:w-8 text-[#CBAA7B]" />
                       </div>
-                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Espiritualidade com Respeito e Propósito</h3>
+                      <h3 className="text-lg md:text-xl font-serif text-[#2B484C]">Respeito e Propósito</h3>
                       <p className="text-[#2B484C]/70 font-sans text-sm md:text-base">
-                        Integro fé como apoio emocional, quando isso faz sentido para o paciente.
+                        Integro diferentes abordagens quando isso faz sentido para o paciente.
                       </p>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ export default function Home() {
                   responsabilidades e desejam encontrar um novo jeito de estar na vida.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Minha abordagem une ciência, espiritualidade e vivência prática. Acredito que cuidar da mente é uma
+                  Minha abordagem une ciência e vivência prática. Acredito que cuidar da mente é uma
                   das decisões mais estratégicas que alguém pode tomar.
                 </p>
                 <div className="pt-4">
