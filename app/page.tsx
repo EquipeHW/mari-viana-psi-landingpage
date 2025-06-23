@@ -60,7 +60,7 @@ export default function Home() {
                 Psicóloga CRP 05/47572
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-4xl font-serif leading-tight text-[#2B484C]">
-                <span className="font-medium">Equilíbrio</span> entre vida profissional e saúde emocional.
+                <span className="font-medium">Equilíbrio</span> entre responsabilidades e saúde emocional.
               </h1>
               <div className="space-y-4">
                 <p className="text-lg text-[#2B484C] font-sans leading-relaxed">
@@ -86,7 +86,7 @@ export default function Home() {
                   <strong>transformação</strong>.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Especialista em desenvolvimento humano, ex-executiva de RH no mercado corporativo, conheci de perto o
+                  Especialista em desenvolvimento humano, executiva de RH no mercado corporativo, conheci de perto o
                   burnout e a sobrecarga. Hoje, acolho homens e mulheres que precisam de um espaço de estratégia
                   emocional para continuar crescendo – sem se perder de si.
                 </p>
@@ -374,7 +374,7 @@ export default function Home() {
               <div className="md:col-span-5 relative">
                 <div className="relative h-[600px] rounded-2xl overflow-hidden">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
+                    src="mari4.jpg"
                     alt="Psicóloga Mariana Viana"
                     fill
                     className="object-cover"
@@ -390,18 +390,17 @@ export default function Home() {
                 <h2 className="text-3xl font-serif text-[#2B484C]">
                   Conheça a Psicóloga <span className="font-medium">Mariana Lima Viana Pena</span>
                 </h2>
-                <p className="text-[#2B484C]/80 font-sans text-lg leading-relaxed">
-                  Sou psicóloga com mais de 15 anos de experiência e especialista em desenvolvimento humano. Minha
-                  trajetória começou no mercado corporativo, onde fui executiva de RH — até que o burnout e a ansiedade
-                  me obrigaram a reavaliar tudo.
+                <p className="text-[#2B484C]/80 font-sans leading-relaxed">
+                  Sou psicóloga com mais de 15 anos de experiência e especialista em desenvolvimento humano. Minha trajetória foi construída no ambiente corporativo, onde atuo até hoje como executiva de Recursos Humanos.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Transformei essa crise em propósito. Hoje, ajudo pessoas que vivem sob pressão, lidam com múltiplas
-                  responsabilidades e desejam encontrar um novo jeito de estar na vida.
+                  Ao longo dos anos, compreendi de forma profunda como o ritmo acelerado, as múltiplas demandas e a pressão constante impactam a saúde mental — e isso ampliou meu propósito profissional.
                 </p>
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
-                  Minha abordagem une ciência e vivência prática. Acredito que cuidar da mente é uma
-                  das decisões mais estratégicas que alguém pode tomar.
+                  Além da atuação corporativa, atendo pessoas que ocupam posições de responsabilidade ou visibilidade, que enfrentam grandes desafios e desejam manter alta performance com clareza, equilíbrio e saúde emocional. Minha abordagem une ciência e escuta qualificada.
+                </p>
+                <p className="text-[#2B484C]/80 font-sans leading-relaxed">
+                  Cuidar da mente é importante para todos mas se torna uma estratégia essencial para quem lidera, decide e entrega. Não é opcional — é parte do sucesso.
                 </p>
                 <div className="pt-4">
                   <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
