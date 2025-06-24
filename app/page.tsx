@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#EBEBEB]">
       <header className="sticky top-0 z-50 w-full border-b border-[#EBEBEB] bg-white/80 backdrop-blur-sm">
-        <div className="container flex h-24 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="relative h-20 w-64">
+        <div className="container flex items-center justify-between h-20 md:h-24">
+          <div className="flex items-center gap-2 md:gap-4 w-full">
+            <div className="relative h-14 w-40 md:h-20 md:w-64 flex-shrink-0">
               <Image
                 src="logoazulmari.png"
                 alt="Mariana Viana Psicologia"
@@ -18,48 +18,26 @@ export default function Home() {
                 className="object-contain"
               />
             </div>
+            <div className="flex-1" />
+            <Button asChild className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:py-6 md:text-base whitespace-nowrap uppercase font-bold">
+              <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">Agende sua consulta</a>
+            </Button>
           </div>
-          <nav className="hidden md:flex gap-8">
-            <Link
-              href="#tratamentos"
-              className="text-sm font-sans text-[#2B484C] hover:text-[#CBAA7B] transition-colors"
-            >
-              Tratamentos
-            </Link>
-            <Link
-              href="#diferenciais"
-              className="text-sm font-sans text-[#2B484C] hover:text-[#CBAA7B] transition-colors"
-            >
-              Diferenciais
-            </Link>
-            <Link
-              href="#depoimentos"
-              className="text-sm font-sans text-[#2B484C] hover:text-[#CBAA7B] transition-colors"
-            >
-              Depoimentos
-            </Link>
-            <Link href="#sobre" className="text-sm font-sans text-[#2B484C] hover:text-[#CBAA7B] transition-colors">
-              Sobre
-            </Link>
-            <Link href="#faq" className="text-sm font-sans text-[#2B484C] hover:text-[#CBAA7B] transition-colors">
-              FAQ
-            </Link>
-          </nav>
-          <Button asChild className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-6">
-            <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">Agende sua consulta</a>
-          </Button>
         </div>
       </header>
 
       <main className="flex-1">
         {/* Hero Section - Dobra 1 */}
-        <section className="py-14 md:py-14 container">
+        <section className="py-10 md:py-14 container">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-7 space-y-8">
+            <div className="md:col-span-7 space-y-6">
               <div className="inline-block px-4 py-1 rounded-full bg-[#CBAA7B]/20 text-[#CBAA7B] text-sm font-sans mb-2">
-                Psicóloga CRP 05/47572
+                <strong>Psicóloga CRP 05/47572</strong>
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-4xl font-serif leading-tight text-[#2B484C]">
+              <h2 className="text-4xl font-serif text-[#2B484C] font-medium">
+                Psicóloga Mariana Viana
+              </h2>
+              <h1 className="text-3xl md:text-3xl lg:text-3xl font-serif leading-tight text-[#2B484C]">
                 <span className="font-medium">Equilíbrio</span> entre responsabilidades e saúde emocional.
               </h1>
               <div className="space-y-4">
@@ -78,9 +56,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="space-y-4">
-                <h2 className="text-4xl font-serif text-[#2B484C] font-medium">
-                  Psicóloga Mariana Viana
-                </h2>
+             
                 <p className="text-[#2B484C]/80 font-sans leading-relaxed">
                   Mais de 15 anos de experiência acolhendo pessoas que buscam mais do que alívio:{" "}
                   <strong>transformação</strong>.
@@ -92,15 +68,17 @@ export default function Home() {
                 </p>
               </div>
               <div className="pt-4">
-                <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8 py-6 text-base">
-                  Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                <Button className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:py-6 md:text-base whitespace-nowrap uppercase font-bold" asChild>
+                  <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">
+                    Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
               </div>
             </div>
             <div className="md:col-span-5 relative">
               <div className="relative h-[600px] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dsc6380.jpg-Gwtl3w5DUUkCir2tuZkqe1TPGzIuMz.jpeg"
+                  src="mari2.jpg"
                   alt="Psicóloga Mariana Viana"
                   fill
                   className="object-cover"
@@ -184,8 +162,10 @@ export default function Home() {
               <p className="text-lg font-sans text-[#2B484C] mb-6">
                 Particular, humanizado e flexível. Exclusividade para quem está pronto(a) para investir em si.
               </p>
-              <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
-                Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+              <Button className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:py-3 md:text-base whitespace-nowrap uppercase font-bold" asChild>
+                <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">
+                  Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
@@ -274,8 +254,8 @@ export default function Home() {
                 </div>
 
                 <div className="text-center pt-4">
-                  <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-6 py-3 md:px-8 md:py-4 text-sm md:text-base">
-                    Conheça os diferenciais <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:py-3 md:text-base whitespace-nowrap uppercase font-bold" asChild>
+                    <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">Agende sua consulta</a>
                   </Button>
                 </div>
               </div>
@@ -403,8 +383,10 @@ export default function Home() {
                   Cuidar da mente é importante para todos mas se torna uma estratégia essencial para quem lidera, decide e entrega. Não é opcional — é parte do sucesso.
                 </p>
                 <div className="pt-4">
-                  <Button className="bg-[#DBB8AF] hover:bg-[#d1a79d] text-[#2B484C] rounded-full px-8">
-                    Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:py-3 md:text-base whitespace-nowrap uppercase font-bold" asChild>
+                    <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">
+                      Agende sua consulta pelo WhatsApp <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -423,48 +405,50 @@ export default function Home() {
 
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-b border-[#CBAA7B]/30">
-                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
+                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6 text-left">
                   Como funciona o atendimento online?
                 </AccordionTrigger>
-                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
+                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6 text-left">
                   Realizado por videoconferência em plataformas seguras. A escuta é profunda, acolhedora e estruturada
                   para resultados.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border-b border-[#CBAA7B]/30">
-                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
+                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6 text-left">
                   Quanto tempo dura o tratamento?
                 </AccordionTrigger>
-                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
+                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6 text-left">
                   Cada jornada é única. Respeito o seu tempo e seus objetivos, sem fórmulas prontas.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border-b border-[#CBAA7B]/30">
-                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
+                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6 text-left">
                   Você atende por convênios ou planos de saúde?
                 </AccordionTrigger>
-                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
+                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6 text-left">
                   No momento, os atendimentos são particulares, oferecendo exclusividade, sigilo e flexibilidade. Você
                   pode solicitar reembolso ao seu plano com o recibo que forneço.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border-b border-[#CBAA7B]/30">
-                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6">
+                <AccordionTrigger className="text-[#2B484C] text-lg font-sans hover:text-[#CBAA7B] transition-colors py-6 text-left">
                   Como agendar minha consulta?
                 </AccordionTrigger>
-                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6">
+                <AccordionContent className="text-[#2B484C]/80 font-sans pb-6 text-left">
                   Basta clicar no botão abaixo para iniciar uma conversa no WhatsApp.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
 
             <div className="text-center pt-8">
-              <Button className="bg-[#2B484C] hover:bg-[#243c3f] text-white rounded-full px-8 flex items-center gap-2 mx-auto">
-                <MessageCircle size={18} />
-                Agende sua consulta pelo WhatsApp
+              <Button className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-8 md:text-base flex items-center gap-2 mx-auto whitespace-nowrap uppercase font-bold" asChild>
+                <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle size={18} />
+                  Agende sua consulta pelo WhatsApp
+                </a>
               </Button>
             </div>
           </div>
@@ -489,8 +473,8 @@ export default function Home() {
               <p className="text-white/70 font-sans">Psicóloga CRP 05/47572</p>
               <p className="text-white/70 font-sans">Atendimento 100% online – Sigilo e flexibilidade.</p>
               <div className="pt-4">
-                <Button asChild className="bg-[#DBB8AF] text-[#2B484C] hover:bg-[#d1a79d] rounded-full px-6">
-                  <a href="https://wa.me/5511980553835" target="_blank" rel="noopener noreferrer">
+                <Button asChild className="bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-3 py-2 text-xs w-full sm:w-auto md:px-6 md:text-base whitespace-nowrap uppercase font-bold">
+                  <a href="https://wa.me/5511912027865" target="_blank" rel="noopener noreferrer">
                     Agende sua consulta
                   </a>
                 </Button>
@@ -501,7 +485,7 @@ export default function Home() {
               <h3 className="text-xl font-versailles">Contato</h3>
               <p className="flex items-center gap-3 text-white/90 font-sans">
                 <MessageCircle size={18} className="text-[#DBB8AF]" />
-                <span>WhatsApp: (11) 98055-3835</span>
+                <span>WhatsApp: (11) 91202-7865</span>
               </p>
              
             </div>
